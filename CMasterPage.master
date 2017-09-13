@@ -1,0 +1,583 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CMasterPage.master.cs" Inherits="Customer_CMasterPage" %>
+
+
+<!doctype html>
+<!--[if lt IE 7 ]><html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]><html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="author" content="ThemeFuse">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AutoTrader - Homepage</title>
+<link href='http://fonts.googleapis.com/css?family=Cabin:400,400italic,500,600,700|PT+Serif+Caption:400,400italic' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="favicon.html">
+
+<link href="style.css" media="screen" rel="stylesheet">
+<link href="screen.css" media="screen" rel="stylesheet">
+<!-- custom CSS -->
+<link href="custom.css" media="screen" rel="stylesheet">
+
+<!-- main JS libs  -->
+<script src="js/libs/modernizr.min.js"></script>
+    <link href="custom.css" rel="stylesheet" />
+<script src="js/libs/respond.min.js"></script>					 
+<script src="js/libs/jquery.min.js"></script>
+
+<!-- scripts  -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/general.js"></script>
+<script src="js/hoverIntent.js"></script>
+<!-- carousel -->
+<script src="js/jquery.carouFredSel.min.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<!-- styled select -->
+<link rel="stylesheet" href="css/cusel.css">
+<script src="js/cusel-min.js"></script>
+
+<link href="rs-plugin/css/settings.css" media="screen" rel="stylesheet">
+<script src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+<script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+</head>
+
+<body>
+    <form id="frm" runat ="server" >
+<div class="body_wrap homepage">
+	
+	<!-- header top bar -->
+	<div class="header_top">
+		<div class="container">
+		
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt=""></a>
+			</div>
+			
+			<!-- topmenu -->    
+			<nav id="topmenu" class="clearfix">            
+				<ul class="dropdown">    
+                	<li class="menu-level-0 current-menu-ancestor"><a href="CHome.aspx"><span>Home</span></a>
+						
+					</li>                                                                            
+					<li class="menu-level-0"><a href="Customerhome.aspx"><span>Own Cars</span></a>
+                    	<%--<ul class="submenu-1">
+	                    	<li class="menu-level-1"><a href="offers-search.html"><span>Search Page</span></a></li>
+                            <li class="menu-level-1"><a href="offers-list.html"><span>Offers List - Filter Right</span></a></li>
+                            <li class="menu-level-1"><a href="offers-list-left.html"><span>Offers List - Filter Left</span></a></li>
+                            <li class="menu-level-1"><a href="car-makers.html"><span>Car Makers</span></a></li>
+						</ul>--%>
+                    </li>       
+                    <li class="menu-level-0 mega-nav"><a href="PackagesLists.aspx"><span>SPECIAL PACKAGES</span></a>
+                    <%--	<ul class="submenu-1">
+							<li class="menu-level-1 mega-nav-widget">
+								<!-- widget recent entries -->
+								<div class="widget-container widget_recent_entries"> 
+									<h3 class="widget-title">Latest News</h3>								
+									<ul>
+										<li class="clearfix">
+											<a href="blog-details.html" class="link-name">What You Should Know No About Using a CDN With WordPress</a>
+											<div class="post-meta"><span class="post-date">posted 1 days ago</span> <a href="blog-details.html#comments">3 comments</a></div>
+										</li>
+										<li class="clearfix">
+											<a href="blog-details.html" class="link-name">Black Friday! Everything half price. K, Thanx, Bye!</a>
+											<div class="post-meta"><span class="post-date">posted 2 days ago</span> <a href="blog-details.html#comments">23 comments</a></div>
+										</li>
+										<li class="clearfix">
+											<a href="blog-details.html" class="link-name">Our first FREE WordPress theme is now available - Gadgetry</a>
+											<div class="post-meta"><span class="post-date">posted 3 days ago</span> <a href="blog-details.html#comments">34 comments</a></div>
+										</li>
+									</ul>
+								</div>
+								<!--/ widget recent entries -->
+							</li>
+							<li class="menu-level-1 mega-nav-widget">                            	
+								<!-- widget latest entries from category -->
+								<div class="widget-container widget_featured_posts"> 
+									<h3 class="widget-title">Fresh from our Blog</h3>
+									<ul>
+										<li class="post-item">
+											<div class="post-title"><a href="blog-details.html">What Today's Video Games Say About The Moment We Live In</a></div>
+											<div class="post-meta">written by <span class="post-author">Jenna Pratt</span></div>
+											<div class="post-image"><a href="blog-details.html"><img src="images/temp/featured_thumb_1.jpg" alt=""></a></div>
+											<div class="post-descr">
+	                                        <p>Vivamus hendrerit arcu sed erat molestie adro vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. </p>
+	                                        </div>
+											<div class="post-more"><a href="blog-details.html">READ THE ARTICLE</a></div>
+										</li>																		                    
+									</ul>										
+								</div>
+								<!--/ widget latest entries from category -->
+							</li>     
+							<li class="menu-level-1 mega-nav-widget">        
+								<!-- twiiter widget -->
+								<div class="widget-container widget_twitter">							
+									<h3 class="widget-title">Twitter Activity</h3>							
+									<div class="tweet_list">											   
+										<div class="tweet_item clearfix">
+											<div class="tweet_image"><img src="images/temp/twitter_avatar.png" width="30" height="30" alt="" /></div>
+											<div class="tweet_text">
+												<div class="inner">
+												Lorem ipsum dolor sit amet, consectetur adiping elit.  <a href="#">http://t.co/dwRp8eds</a>
+												<span class="tweet_time">About 3 hours ago</span>
+												</div>
+											</div>
+										</div>   
+										
+										<div class="tweet_item clearfix">
+											<div class="tweet_image"><img src="images/temp/twitter_avatar.png" width="30" height="30" alt="" /></div>
+											<div class="tweet_text">
+												<div class="inner">
+												Lorem ipsum dolor sit amet, consectetur adiping elit. Class aptent taciti sociosqu ad litora torquent per conubia nostr <a href="#">http://t.co/dwRp8eds</a>
+												<span class="tweet_time">About 7 hours ago ago</span>
+											  </div>
+											</div>
+										</div>								
+									</div>
+									<a href="#" class="link-more">FOLLOW US ON TWITTER</a>
+							</div>
+							<!--/ twiiter widget -->
+							</li>												
+						</ul>  --%>
+                    </li>
+	                <li class="menu-level-0 mega-nav"><a href="ServicesHistory.aspx"><span>Services</span></a>
+	                	<%--<ul class="submenu-1">                      	                                                                                                  
+	                        <li class="menu-level-1 mega-nav-widget">                            	
+	                            <!-- widget text -->
+	                            <div class="widget-container widget_text"> 
+	                                <h3 class="widget-title">Welcome Text</h3>
+	                                <div class="textwidget">
+	                                    <p>Easily add a functional and highly customizable Mega Menu to your WordPress website. Choose your option of five different color schemes within the WordPress admin, or style it to your liking with your own stylesheet. </p>
+	                                    <p>Lorem ipsum dolor sit amet, consectetur adiping elit. Class aptent taciti sociosqu ad litora torquent per conubia nostr.</p>
+	                                </div>
+	                            </div>
+	                            <!--/ widget text -->
+	                        </li>	                        
+                            <li class="menu-level-1"><a href="#"><span>Vehicles</span></a>
+	                            <ul class="submenu-2">                                
+	                                <li class="menu-level-2"><a href="blog.html"><span>Motorbikes</span></a></li>
+	                                <li class="menu-level-2"><a href="blog.html"><span>Compacts</span></a></li>
+	                                <li class="menu-level-2"><a href="blog.html"><span>Sedans</span></a></li>
+	                                <li class="menu-level-2"><a href="blog.html"><span>4x4 SUVs</span></a></li>
+	                                <li class="menu-level-2"><a href="blog.html"><span>Pickups</span></a></li>
+	                                <li class="menu-level-2 more-nav"><a href="blog.html"><span>view all</span></a></li>
+	                            </ul>
+							</li>
+	                        <li class="menu-level-1"><a href="#"><span>Submenu</span></a>
+	                            <ul class="submenu-2">                                
+	                                <li class="menu-level-2"><a href="blog.html"><span>1st Blog Category</span></a></li>
+	                                <li class="menu-level-2"><a href="blog.html"><span>Second Category</span></a></li>
+	                                <li class="menu-level-2"><a href="blog.html"><span>3rd Category</span></a></li>
+	                                <li class="menu-level-2"><a href="blog.html"><span>Forth Category</span></a></li>
+	                                <li class="menu-level-2"><a href="blog.html"><span>Another Category</span></a></li>
+	                                <li class="menu-level-2 more-nav"><a href="blog.html"><span>view all</span></a></li>
+	                            </ul>
+							</li>                        	                                                                    
+	                    </ul>--%>
+	                </li>
+                    <li class="menu-level-0"><a href="#"><span>Pages</span></a>
+						<ul class="submenu-1">
+                        	<li class="menu-level-1"><a href="blog.html"><span>Blog</span></a></li>							
+							<li class="menu-level-1"><a href="page-about.html"><span>About Page</span></a></li>
+							<li class="menu-level-1"><a href="page-faq.html"><span>FAQ</span></a></li>
+                            <li class="menu-level-1"><a href="SecondCarPosts.aspx"><span>Second Hand Cars</span></a></li>
+                            <li class="menu-level-1"><a href="#"><span>Shortcodes</span></a>
+								<ul class="submenu-2">                        		
+									<li class="menu-level-2"><a href="shortcodes-buttons.html"><span>Buttons & Lists</span></a></li> 
+									<li class="menu-level-2"><a href="shortcodes-text.html"><span>Text & Images</span></a></li>
+									<li class="menu-level-2"><a href="shortcodes-charts.html"><span>Charts</span></a></li>  
+									<li class="menu-level-2"><a href="shortcodes-columns.html"><span>Columns</span></a></li>
+									<li class="menu-level-2"><a href="shortcodes-columns-full.html"><span>Columns full width</span></a></li>
+									<li class="menu-level-2"><a href="shortcodes-lightbox.html"><span>Lightbox</span></a></li>
+									<li class="menu-level-2"><a href="shortcodes-media.html"><span>Videos & Galleries</span></a></li>
+									<li class="menu-level-2"><a href="shortcodes-maps.html"><span>Google Maps</span></a></li>
+									<li class="menu-level-2"><a href="shortcodes-tabs.html"><span>Tabs & Toggles</span></a></li>
+									<li class="menu-level-2"><a href="shortcodes-tables.html"><span>Boxes & Tables</span></a></li>                            
+									<li class="menu-level-2"><a href="shortcodes-typography.html"><span>Typography</span></a></li>
+									<li class="menu-level-2"><a href="shortcodes-widgets.html"><span>Custom Widgets</span></a></li>
+								</ul>   
+							</li>
+							<li class="menu-level-1"><a href="CProfile.aspx"><span>Profile</span></a></li>
+							<li class="menu-level-1"><a href="CLogout.aspx"><span>log Out</span></a></li>
+						</ul>
+					</li> 
+					<li class="menu-level-0"><a href="contact.html"><span>Location</span></a></li>                                
+				</ul>   
+			</nav>    
+		<!--/ topmenu -->
+		</div>
+	</div>
+	<!--/ header top bar -->
+		
+<!-- header -->
+    <asp:ContentPlaceHolder ID="Adv" runat="server"></asp:ContentPlaceHolder>
+<!--/ header -->
+
+<!-- middle -->
+    
+	<div class="middle_row row_white search_row">
+		<div class="container">
+            <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+		</div>
+	</div>
+	
+	<div class="middle_row row_light_gray">
+		<div class="container clearfix">  
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>		
+		</div>
+	</div>
+	
+    <!-- car types -->
+	
+
+
+
+
+    <div class="middle_row latest_offers">
+		<div class="container clearfix">         			
+        	<h2>CARS IN SERVICE STATION</h2>
+                     
+            <a href="#" class="link_more">View All Added Cars</a>
+		</div>
+
+
+            
+        <div style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 1349px; height: 210px; margin: 15px 0px 0px; overflow: hidden;" class="caroufredsel_wrapper"><div style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 85px; margin: 0px; width: 5597px; height: 210px; z-index: auto;" id="latest_offers">
+            
+            <div class="latest_item">
+            <a href="offers-details.html"><img src="images/temp/prod_img_01.jpg" alt=""></a>
+            <a href="offers-details.html">Mercedes-Benz ML 350</a>
+            </div>
+
+             <%
+                DataClassesDataContext dc1 = new DataClassesDataContext();
+                var data = (from t in dc1.VehicleNumbers
+                            join tv in dc1.Vehicles on t.Vid equals tv.Vid
+                            join tvn in dc1.VehicleNumbers on t.Vnumberid equals tvn.Vnumberid
+                            where t.Userid.Equals(Session["Userid"])
+                            select new
+                            {
+                                t.Vnumberid,
+                                tv.Vid,
+                                tv.Vname,
+                                tv.Vimg
+                            }).ToList();
+                string str = "";
+               
+                foreach (var item in data)
+                {
+                    str += "<div class='latest_item'>";
+                    str += "<a><img src='../Images/" + item.Vimg + "' height ='162px' width ='230px'></a>";
+                    str += "<a>" + item.Vname + "</a></div>";
+                   // str += "<td> <img src='../Images/" + item.Vimg + "' height ='100px' width ='100px' /><br/>" + item.Vname + "</td>";
+                } 
+                Response.Write(str);
+                 %> 
+
+             <div class="latest_item">
+            <a href="offers-details.html"><img src="images/temp/prod_img_01.jpg" alt=""></a>
+            <a href="offers-details.html">Mercedes-Benz ML 350</a>
+            </div>
+            
+            
+       <div style="margin-right: 3px; opacity: 1;" class="latest_item">
+            <a style="outline: medium none;" hidefocus="true" href="offers-details.html"><img src="images/temp/prod_img_02.jpg" alt=""></a>
+            <a style="outline: medium none;" hidefocus="true" href="offers-details.html">Porsche CAYENNE S</a>
+            </div><div style="margin-right: 3px; opacity: 1;" class="latest_item">
+            <a style="outline: medium none;" hidefocus="true" href="offers-details.html"><img src="images/temp/prod_img_03.jpg" alt=""></a>
+            <a style="outline: medium none;" hidefocus="true" href="offers-details.html">Infiniti FX 37 S Premium</a>
+            </div></div></div>
+        
+        
+                    
+        <script>
+            jQuery(document).ready(function ($) {
+                var screenRes = $(window).width();
+
+                $('#latest_offers').carouFredSel({
+                    prev: "#latest_offers_prev",
+                    next: "#latest_offers_next",
+                    infinite: false,
+                    circular: true,
+                    auto: false,
+                    width: '100%',
+                    scroll: {
+                        items: 1,
+                        onBefore: function (data) {
+                            if (screenRes > 900) {
+                                data.items.visible.eq(0).animate({ opacity: 0.15 }, 300);
+                                data.items.old.eq(-1).animate({ opacity: 1 }, 300);
+                                data.items.visible.eq(-1).animate({ opacity: 0.15 }, 300);
+                            }
+                        },
+                        onAfter: function (data) {
+                            if (screenRes > 900) {
+                                data.items.old.eq(0).animate({ opacity: 1 }, 300);
+                            }
+                        }
+                    }
+                });
+                if (screenRes > 900) {
+                    var vis_items = $("#latest_offers").triggerHandler("currentVisible");
+                    vis_items.eq(-1).animate({ opacity: 0.15 }, 100);
+                    vis_items.eq(0).animate({ opacity: 0.15 }, 100);
+                }
+            });
+        </script>             
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<%--<div class="middle_row latest_offers">
+		<div class="container clearfix">         			
+        	<h2>CARS IN SERVICE STATION</h2>
+                     
+            <a href="#" class="link_more">View All Cars Added</a>
+		</div>
+            
+        <div id="latest_offers" class="latest_offers" style="margin-right: 3px; opacity: 0.15;">
+            <%
+                DataClassesDataContext dc1 = new DataClassesDataContext();
+                var data = (from t in dc1.VehicleNumbers
+                            join tv in dc1.Vehicles on t.Vid equals tv.Vid
+                            join tvn in dc1.VehicleNumbers on t.Vnumberid equals tvn.Vnumberid
+                            where t.Userid.Equals(Session["Userid"])
+                            select new
+                            {
+                                t.Vnumberid,
+                                tv.Vid,
+                                tv.Vname,
+                                tv.Vimg
+                            }).ToList();
+                string str = "";
+                
+                
+                
+                
+            
+                foreach (var item in data)
+                {
+                    str += "<div class='latest_item' style='margin-right: 3px;'><a href='offers-details.html'  style='outline: medium none;'>";
+                    str += "  <img src='../Images/" + item.Vimg + "' height ='100px' width ='100px' />";
+                    str += " </a><a href='offers-details.html' hidefocus='true' style='outline: medium none;'>"+item.Vname+"</a></div>";
+
+
+          // str += "<td> <img src='../Images/" + data[i].Vimg + "' height ='100px' width ='100px' /><br/><a href=CustProductList.aspx?Id=" + data[i].Vid + ">" + data[i].Vname + "</a></td>";
+                }
+                Response.Write(str);
+                 %>--%>    
+        </div>
+        
+        <a class="prev" id="latest_offers_prev" href="#"></a>
+        <a class="next" id="latest_offers_next" href="#"></a>
+                    
+        <script>
+            jQuery(document).ready(function ($) {
+                var screenRes = $(window).width();
+
+                $('#latest_offers').carouFredSel({
+                    prev: "#latest_offers_prev",
+                    next: "#latest_offers_next",
+                    infinite: false,
+                    circular: true,
+                    auto: false,
+                    width: '100%',
+                    scroll: {
+                        items: 1,
+                        onBefore: function (data) {
+                            if (screenRes > 900) {
+                                data.items.visible.eq(0).animate({ opacity: 0.15 }, 300);
+                                data.items.old.eq(-1).animate({ opacity: 1 }, 300);
+                                data.items.visible.eq(-1).animate({ opacity: 0.15 }, 300);
+                            }
+                        },
+                        onAfter: function (data) {
+                            if (screenRes > 900) {
+                                data.items.old.eq(0).animate({ opacity: 1 }, 300);
+                            }
+                        }
+                    }
+                });
+                if (screenRes > 900) {
+                    var vis_items = $("#latest_offers").triggerHandler("currentVisible");
+                    vis_items.eq(-1).animate({ opacity: 0.15 }, 100);
+                    vis_items.eq(0).animate({ opacity: 0.15 }, 100);
+                }
+            });
+        </script>             
+	</div>
+    <!--/ latest_offers -->
+    
+    <!-- testimonials -->
+    <div class="middle_row row_white testimonials">
+		<div class="container">
+        	
+            <div class="slider_container clearfix" id="testimonials">                      	 
+                <div class="slider-item">
+                    <div class="quote-text">
+                    <p><a href="CHome.aspx">Car Assemble And Service Station</a> team is very proffessional and has found for perfect products and provide best Services for our Customers needs. We'll be sure to give best Services according to our Customers Highly recommended!</p>
+                    </div>
+                    <div class="quote-author"><span>From Car Assemble And Service Station Team</span></div>                 
+                </div>
+                <div class="slider-item">
+                    <div class="quote-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="quote-author"><span>James Backer</span>, Buyer</div>
+                </div>
+                <div class="slider-item">
+                    <div class="quote-text">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. We have to say it has made us delighted we chose Medica.</p>
+                    </div>
+                    <div class="quote-author"><span>Mr. Smith</span>, Partner</div>
+                </div>	                        
+            </div>
+            <a class="prev" id="testimonials_prev" href="#"></a>
+            <a class="next" id="testimonials_next" href="#"></a>
+            <script>
+                jQuery(document).ready(function ($) {
+                    $('#testimonials').carouFredSel({
+                        next: "#testimonials_next",
+                        prev: "#testimonials_prev",
+                        infinite: false,
+                        items: 1,
+                        auto: false,
+                        scroll: {
+                            items: 1,
+                            fx: "crossfade",
+                            easing: "linear",
+                            duration: 300
+                        }
+                    });
+                });
+            </script>    
+            
+        </div>
+	</div>
+    <!--/ testimonials -->
+    
+    <!-- popular brands -->
+	<div class="middle_row row_light_gray brand_list">
+		<div class="container">
+	            <h2>MOST POPULAR BRANDS:</h2>
+	            <ul>
+	            	<li><a href="#"><img src="images/temp/brand_logo_1.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/temp/brand_logo_2.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/temp/brand_logo_3.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/temp/brand_logo_4.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/temp/brand_logo_5.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/temp/brand_logo_6.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/temp/brand_logo_7.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/temp/brand_logo_8.png" alt=""></a></li>
+	            </ul>
+	            
+	            <a href="#" class="link_more">View All Popular Brands</a>
+        </div>
+	</div>
+    <!--/ popular brands -->
+    
+<!--/ middle -->
+
+<div class="footer">
+	<div class="container clearfix">
+    
+		<div class="f_col f_col_1">  
+            <h3>Vehicles:</h3>
+            <ul>
+                <li><a href="#"><span>Motorbikes</span></a></li> 
+                <li><a href="#"><span>Compacts</span></a></li>
+                <li><a href="#"><span>Sedans</span></a></li>
+                <li><a href="#"><span>4x4 SUVs</span></a></li>
+                <li><a href="#"><span>Pickups</span></a></li>
+                <li><a href="#"><span>Vans & Trucks</span></a></li>                                
+            </ul>
+        </div>
+        <!--/ footer col 1 -->
+        
+        <div class="f_col f_col_2">        	
+			<h3>Services:</h3>
+            <ul>
+                <li><a href="#"><span>Buy a car</span></a></li> 
+                <li><a href="#"><span>Sell your Car</span></a></li>
+                <li><a href="#"><span>Buy Back</span></a></li>
+                <li><a href="#"><span>Repair Shop </span></a></li>
+            </ul>
+        </div>
+        <!--/ footer col 2 -->
+        
+        <div class="f_col f_col_3">        	
+            <h3>Privacy:</h3>
+            <ul>
+                <li><a href="#"><span>Terms & Conditions</span></a></li> 
+                <li><a href="#"><span>Privacy Statement</span></a></li>
+                <li><a href="#"><span>F.A.Q.</span></a></li>
+                <li><a href="#"><span>Support</span></a></li>
+                <li><a href="#"><span>Confidentiality</span></a></li>
+            </ul>
+        </div>        
+        <!--/ footer col 3 -->
+        
+        <div class="f_col f_col_4">   
+           	<h3>OUR SHOWROOM</h3>
+            <div class="footer_address">
+                <div class="address">
+	                21 Sunset Blvd, Los Angeles<br>
+	                California, 90453
+                </div>
+                <div class="hours">
+                	Mon - Fri: 9AM - 7 PM<br>
+					Sat - Sun: 9AM - 2 PM
+				</div>
+                <a href="contact.html" class="notice">View Bigger Map</a>
+            </div>
+            <div class="footer_map" style="background:url(images/temp/footer_map.jpg);"><a href="contact.html" class="amap"></a></div>
+      	</div>
+        <!--/ footer col 4 -->
+        
+        <div class="clear"></div>
+        
+        <div class="footer_social">
+            
+        	<div class="social_inner">
+			    <a href="#" class="social-google"><span>Google +1</span></a>
+			    <a href="#" class="social-fb"><span>Facebook</span></a>
+			    <a href="#" class="social-twitter"><span>Twitter</span></a>
+			    <a href="#" class="social-dribble"><span>Dribble</span></a>
+			    <a href="#" class="social-linkedin"><span>LinkedIn</span></a>
+			    <a href="#" class="social-vimeo"><span>Vimeo</span></a>
+			    <a href="#" class="social-flickr"><span>Flickr</span></a>
+			    <a href="#" class="social-da"><span>Devianart</span></a>
+            </div>
+		</div>
+        
+        <div class="footer_contacts">
+        	<span class="phone">+91-9662982638</span>
+            <span class="email">parthivpatel_20_08@yahoo.com</span>
+        </div>
+        
+        <div class="copyright">
+        @2015<a href="http://themefuse.com/">Car Aeemble And Service Station</a>  &nbsp;|&nbsp;  <a href="http://themefuse.com/" class="link_white">Premium WordPress themes</a>
+        </div>
+        	        
+    </div> 
+</div>
+</form>
+</body>
+</html>
